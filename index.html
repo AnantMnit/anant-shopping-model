@@ -74,16 +74,31 @@
         </div>
     </header>
     <div class="hero-section">
+        <button class="hero-arrow left"><i class="fa-solid fa-chevron-left"></i></button>
+        <div class="hero-slider">
+            <img src="hero_image.jpg" class="hero-slide active" alt="Hero Image 1">
+            <img src="hero_image2.jpg" class="hero-slide" alt="Hero Image 2">
+            <img src="hero_image3.jpg" class="hero-slide" alt="Hero Image 3">
+            <img src="hero_image4.jpg" class="hero-slide" alt="Hero Image 4">
+        </div>
+        <div class="hero-dots">
+            <span class="hero-dot active"></span>
+            <span class="hero-dot"></span>
+            <span class="hero-dot"></span>
+            <span class="hero-dot"></span>
+        </div>
+        <button class="hero-arrow right"><i class="fa-solid fa-chevron-right"></i></button>
         <div class="hero-msg">
             <p>You are on amazon.com. You can also shop on Amazon India for millions of products with fast local delivery.<a> Click here to go to amazon.in</a></p>
-
         </div>
     </div>
+    
     <div class="shop-section">
         <div class="box1 box">
             <div class="box-content">
                 <H2>Clothes</H2>
                 <div class="box-img" style="background-image: url('box1_image.jpg');"></div>
+                <button class="add-to-cart-btn">Add to Cart</button>
                 <p>See more</p>
             </div>
         </div>
@@ -91,6 +106,7 @@
             <div class="box-content">
                 <H2>Health & Personal Care</H2>
                 <div class="box-img" style="background-image: url('box2_image.jpg');"></div>
+                <button class="add-to-cart-btn">Add to Cart</button>
                 <p>See more</p>
             </div>
         </div>
@@ -98,6 +114,7 @@
             <div class="box-content">
                 <H2>Furniture</H2>
                 <div class="box-img" style="background-image: url('box3_image.jpg');"></div>
+                <button class="add-to-cart-btn">Add to Cart</button>
                 <p>See more</p>
             </div>
         </div>
@@ -105,6 +122,7 @@
             <div class="box-content">
                 <H2>Electronics</H2>
                 <div class="box-img" style="background-image: url('box4_image.jpg');"></div>
+                <button class="add-to-cart-btn">Add to Cart</button>
                 <p>See more</p>
             </div>
         </div>
@@ -112,6 +130,7 @@
             <div class="box-content">
                 <H2>Beauty picks</H2>
                 <div class="box-img" style="background-image: url('box5_image.jpg');"></div>
+                <button class="add-to-cart-btn">Add to Cart</button>
                 <p>See more</p>
             </div>
         </div>
@@ -119,6 +138,7 @@
             <div class="box-content">
                 <H2>Pet Care</H2>
                 <div class="box-img" style="background-image: url('box6_image.jpg');"></div>
+                <button class="add-to-cart-btn">Add to Cart</button>
                 <p>See more</p>
             </div>
         </div>
@@ -126,6 +146,7 @@
             <div class="box-content">
                 <H2>New Arrivals in Toys</H2>
                 <div class="box-img" style="background-image: url('box7_image.jpg');"></div>
+                <button class="add-to-cart-btn">Add to Cart</button>
                 <p>See more</p>
             </div>
         </div>
@@ -133,10 +154,13 @@
             <div class="box-content">
                 <H2>Discover Fashion Trends</H2>
                 <div class="box-img" style="background-image: url('box8_image.jpg');"></div>
+                <button class="add-to-cart-btn">Add to Cart</button>
                 <p>See more</p>
             </div>
         </div>
     </div>
+
+
     <footer>
         <div class="foot-panel-1">
             Back to Top
@@ -204,5 +228,14 @@
             © 1996-2025, Amazon.com, Inc. or its affiliates
         </div>
     </div>
+    <div id="cartModal" class="cart-modal">
+        <div class="cart-modal-content">
+            <span class="cart-modal-close">&times;</span>
+            <h2>Your Cart</h2>
+            <ul class="cart-items-list"></ul>
+        </div>
+    </div>
+    <div id="toast"></div>
 </body>
+<script src="script.js"></script>
 </html>
